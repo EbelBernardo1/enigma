@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 1 - Enigma do Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f7f7f7; /* Cor de fundo suave */
+            color: #333; /* Cor do texto */
+            text-align: center; /* Centraliza todo o texto */
+        }
+
+        h1 {
+            color: #e63946; /* Cor do título */
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+            margin-bottom: 20px;
+        }
+
+        pre {
+            background-color: #fff; /* Fundo branco para o bloco de letras */
+            border: 2px dashed #e63946; /* Bordas com estilo */
+            padding: 20px;
+            padding-left: 1px;
+            padding-right: 30px;
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+            margin: 0 auto; /* Centraliza o bloco de texto */
+            width: fit-content; /* Adapta a largura ao conteúdo */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #e63946; /* Borda do input */
+            border-radius: 5px; /* Cantos arredondados */
+            margin-top: 10px;
+            width: 250px; /* Largura do campo de senha */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #e63946; /* Cor do botão */
+            border: none;
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transição suave */
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #d62839; /* Cor ao passar o mouse */
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #e63946; /* Cor dos links */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Nível 1</h1>
+
+    <h4>
+        <pre>
+        2/30415/64 
+        
+        1012/1/830
+        
+        /16101854/   
+        
+        12061904
+        
+        06031//806
+        </pre>
+    </h4>
+
+    <p><strong>Qual é a senha?</strong></p>
+
+    <input type="text" id="senha" placeholder="Digite a senha aqui">
+    <button onclick="verificarSenha()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+            if (senha === 'pablo') { // Troque 'sua_senha_aqui' pela senha que você deseja
+                document.getElementById('resultado').innerHTML = "Senha correta! <a href='nivel-3.html'>Avançar para o próximo nível</a>";
+            } else {
+                document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
+            }
+        }
+    </script>
+</body>
+</html>
