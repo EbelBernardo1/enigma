@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('sua-imagem.jpg'); /* Coloque o caminho da sua imagem aqui */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: rgba(230, 57, 70, 0.8); /* Cor do botão com leve transparência */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgba(214, 40, 57, 0.9); /* Cor do botão ao passar o mouse */
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="verificarSenha()">Clique para enviar senha</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSenha() {
+            const senha = prompt("Digite a senha:");
+            if (senha === 'amemd') { // Substitua 'amemd' pela senha desejada
+                document.getElementById('resultado').innerHTML = "Senha correta!";
+                // Ação para seguir ao próximo nível ou página
+            } else {
+                document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
+            }
+        }
+    </script>
+
+</body>
+</html>
