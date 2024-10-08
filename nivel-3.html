@@ -12,7 +12,7 @@
             text-align: center; /* Centraliza todo o texto */
             background-image: url('romantize.png');
             background-position: center 0%;
-            background-size: cover;
+            background-size: cover; /* Ajuste o valor entre 0 e 1 para diminuir o brilho */
         }
 
         p {
@@ -93,9 +93,29 @@
         a:hover {
             text-decoration: underline; /* Sublinha ao passar o mouse */
         }
+
+    /* Seu código anterior... */
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('romantize.png'); /* Substitua pelo caminho da sua imagem */
+        background-size: cover;
+        background-position: center 5%; /* Ajuste este valor para mover a imagem para baixo */
+        filter: brightness(0,6); /* Ajuste o brilho da imagem de fundo */
+        z-index: -1; /* Para que a imagem fique atrás dos outros elementos */
+    }
+</style>
+
+
+
     </style>
 </head>
 <body>
+    <div class="background"></div>
 
     <p><strong>Qual é a senha?</strong></p>
 
