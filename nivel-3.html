@@ -3,46 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francês</title>
+    <title>Nível 2</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url('romantize.png'); /* Coloque o caminho da sua imagem aqui */
+            padding: 50px; /* Fundo preto */
+            color: #fff; /* Texto branco */
+            text-align: center; /* Centraliza todo o texto */
+            background-image: url('romantize.png');
+            background-position: center 0%;
             background-size: cover;
-            background-position: center;
-            color: white;
         }
 
         p {
-            color: white;
+            font-size: 1.2em;
+            line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+            margin-bottom: 20px;
+        }
+
+        pre {
+            background-color: #333; /* Fundo cinza escuro para o bloco de letras */
+            border: 2px dashed #fff; /* Bordas brancas */
+            padding: 20px;
+            padding-left: 1px;
+            padding-right: 30px;
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra branca */
+            margin: 0 auto; /* Centraliza o bloco de texto */
+            width: fit-content; /* Adapta a largura ao conteúdo */
+            text-align: left; /* Alinha o texto à esquerda */
+            color: #fff; /* Texto branco */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #fff; /* Borda branca do input */
+            border-radius: 5px; /* Cantos arredondados */
+            margin-top: 10px;
+            width: 250px; /* Largura do campo de senha */
+            background-color: #222; /* Fundo cinza escuro para o campo */
+            color: #fff; /* Texto branco */
         }
 
         button {
-            padding: 15px 30px;
-            font-size: 1.2em;
-            color: white;
-            background-color: rgba(230, 57, 70, 0.8); /* Cor do botão com leve transparência */
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff; /* Texto branco */
+            background-color: #444; /* Fundo cinza escuro do botão */
             border: none;
-            border-radius: 5px;
+            border-radius: 5px; /* Cantos arredondados */
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s; /* Transição suave */
+            margin-top: 10px;
         }
 
         button:hover {
-            background-color: rgba(214, 40, 57, 0.9); /* Cor do botão ao passar o mouse */
+            background-color: #666; /* Cor ao passar o mouse */
         }
 
         #resultado {
             margin-top: 20px;
             font-weight: bold;
             font-size: 1.2em;
-            color: yellow;
+            color: #fff; /* Texto branco */
+        }
+
+        p{
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-top: 400px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"]{
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-top: 20px; /* Adiciona espaço acima do campo de entrada */
+            width: 250px;
+        }
+
+        a {
+            color: #fff; /* Cor branca para os links */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
         }
     </style>
 </head>
@@ -57,13 +106,12 @@
     <script>
         function verificarSenha() {
             const senha = document.getElementById('senha').value;
-            if (senha === 'pablo') { // Troque 'sua_senha_aqui' pela senha que você deseja
+            if (senha === 'romantize') { // Troque 'sua_senha_aqui' pela senha que você deseja
                 document.getElementById('resultado').innerHTML = "Senha correta! <a href='nivel-3.html'>Avançar para o próximo nível</a>";
             } else {
                 document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
             }
         }
     </script>
-
 </body>
 </html>
