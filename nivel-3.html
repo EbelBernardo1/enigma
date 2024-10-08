@@ -19,6 +19,10 @@
             color: white;
         }
 
+        p {
+            color: white;
+        }
+
         button {
             padding: 15px 30px;
             font-size: 1.2em;
@@ -53,6 +57,23 @@
             if (senha === 'romantize') { // Substitua 'amemd' pela senha desejada
                 document.getElementById('resultado').innerHTML = "Senha correta!";
                 // Ação para seguir ao próximo nível ou página
+            } else {
+                document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
+            }
+        }
+    </script>
+
+    <p><strong>Qual é a senha?</strong></p>
+
+    <input type="text" id="senha" placeholder="Digite a senha aqui">
+    <button onclick="verificarSenha()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+            if (senha === 'pablo') { // Troque 'sua_senha_aqui' pela senha que você deseja
+                document.getElementById('resultado').innerHTML = "Senha correta! <a href='nivel-3.html'>Avançar para o próximo nível</a>";
             } else {
                 document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
             }
