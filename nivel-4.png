@@ -1,0 +1,122 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e63946;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 2px dashed #e63946;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #e63946;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #e63946;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #d62839;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nível 4</h1>
+
+    <pre style="display: flex; flex-direction: column; align-items: center;">
+        <h4>01101101 11111010 01110011 01101001 01100011 01100001</h4>
+        <div style="display: flex; gap: 10px;">
+            <img src="Sem título.png" alt="Imagem do enigma">
+            <img src="asd.png" alt="Imagem do enigma">
+        </div>
+        <div style="display: flex; gap: 160px">
+            <h4>Andrade</h4>
+            <h4>Kawe</h4>
+        </div>
+        <h4>01000011 11110011 01100100 01101001 01100111 01101111 00100000 01000010 01101001 01101110 11100001 01110010 01101001 01101111</h4>
+    </pre>
+
+    <p><strong>Qual é a senha?</strong></p>
+
+    <input type="text" id="senha" placeholder="Digite a senha aqui">
+    <button onclick="verificarSenha()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+            if (senha === '01110010 01110101 01100010 01101001') {
+                document.getElementById('resultado').innerHTML = "Senha correta! <a href='nivel-3.html'>Avançar para o próximo nível</a>";
+            } else {
+                document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
+            }
+        }
+    </script>
+</body>
+</html>
