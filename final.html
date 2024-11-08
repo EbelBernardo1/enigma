@@ -1,1 +1,160 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
 
+        h1 {
+            color: #e63946;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 2px dashed #e63946;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #e63946;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #e63946;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #d62839;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <pre style="display: flex; flex-direction: column; align-items: center;">
+        <h2><b>Nível 1</b></h2>
+        <h3>alma de Cigana</h3>
+        <audio controls>
+            <source src="Wayans_Store_5.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+
+        <h2><b>Nível 2</b></h2>
+        <h3>Pablo Neruda</h3>
+        <p>"Te amo sem saber como, nem quando, nem onde, te amo diretamnete sem problemas nem orgulho: assim te amo porque não sei amar de outra maneira"</p>
+
+
+        <h2><b>Nível 3</b></h2>
+        <h3>Romantize</h3>
+        <p>"Romantize cada dia ao seu lado, pois o cotidiano se transforma em magia quando estou com você."</p>
+
+
+        <h2>Nível 4</h2>
+        <h3>Rubi</h3>
+        <p>"Teus olhos têm a intensidade de um rubi apaixonado."</p>
+        <p>‎ </p>
+        <p>"Me faz te beijar com esse teu sorriso."</p>
+        <p>"É a baixinha que consegue me deixar nas alturas."</p>
+        <p>"Coração pula quando vejo a sua bochecha corar."</p>
+        <p>"Deixa o malandro bobo mesmo com a lábia do sábio."</p>
+        <p>"O que eu queria agora era só um tempo pra gente."</p>
+        <p>"Um tapa servido no ouvido é melhor do que te ver ir embora."</p>
+        <p>"Me encontro pensando em você."</p>
+        <p>"Cê partiu e eu já tô com vontade de te ver."</p>
+        <p>"Jogar o colchão no chão e tranzar enquanto o tempo passa."</p>
+        <p>"Fazer o que a gente gosta, se nois tá junto é isso mesmo."</p>
+        <p>"A evolução de um pra outro serve de exemplo...."</p>
+        <p>"Meu plano A é te fazer feliz,
+            O meu plano B é o susseso do plano A."</p>
+        <p>"Descreveria você em linhas as vezes."</p>
+        <p>"Quero saber quando eu vou deixar de sonhar
+            e sentir de fato a sua pele na minha."</p>
+        <p>"Eu já tô amando até o jeito que cê caminha."</p>
+        <p>"Levei ela pra cama em quarto paredes."</p>
+        <p>"Safada no clima quente revira o meu psico."</p>
+        <p>"Como não se aventurar no seu corpo paradisíaco."</p>
+        <p>"Em breve seremos ricos num apartamento chique,
+            com um casal de filhos, eu sei que sempre foi seu sonho."</p>
+
+
+        <h2>Nível 5</h2>
+        <h3>Viagens</h3>
+        <p>Viajar com você é minha terapia</p>
+        <p>Teu sorriso é meu destino favorito em qualquer viagem</p>
+    </pre>
+
+
+    <input type="text" id="senha" placeholder="Digite a senha aqui">
+    <button onclick="verificarSenha()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+            if (senha === '01110010 01110101 01100010 01101001') {
+                document.getElementById('resultado').innerHTML = "Senha correta! <a href='nivel-5.html'>Avançar para o próximo nível</a>";
+            } else {
+                document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
+            }
+        }
+    </script>
+</body>
+</html>
