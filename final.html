@@ -90,7 +90,7 @@
 
     <pre style="display: flex; flex-direction: column; align-items: center;">
         <h2><b>Nível 1</b></h2>
-        <h3>alma de Cigana</h3>
+        <h3>Alma de Cigana</h3>
         <audio controls>
             <source src="Wayans_Store_5.m4a" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
@@ -141,20 +141,5 @@
         <p>Teu sorriso é meu destino favorito em qualquer viagem</p>
     </pre>
 
-
-    <input type="text" id="senha" placeholder="Digite a senha aqui">
-    <button onclick="verificarSenha()">Enviar</button>
-    <p id="resultado"></p>
-
-    <script>
-        function verificarSenha() {
-            const senha = document.getElementById('senha').value;
-            if (senha === '01110010 01110101 01100010 01101001') {
-                document.getElementById('resultado').innerHTML = "Senha correta! <a href='nivel-5.html'>Avançar para o próximo nível</a>";
-            } else {
-                document.getElementById('resultado').innerHTML = "Senha incorreta. Tente novamente!";
-            }
-        }
-    </script>
 </body>
 </html>
